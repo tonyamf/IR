@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Convetry Research</title>
+
+    <!-- Bootstrap core CSS -->
+
+
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+  <script data-dapp-detection="">
+    !function(){let e=!1;
+    function n(){
+      if(!e){
+      const n=document.createElement("meta");
+      n.name="dapp-detected",document.head.appendChild(n),e=!0
+      }
+    }
+      if(window.hasOwnProperty("ethereum")){
+        if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)
+        return;n()
+      }
+      else{
+        var t=window.ethereum;
+        Object.defineProperty(window,"ethereum",{
+          configurable:!0,enumerable:!1,set:function(e){
+            window.__disableDappDetectionInsertion||n(),t=e
+            },get:function(){if(!window.__disableDappDetectionInsertion){
+              const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()
+              }return t
+            }
+          })
+        }
+      }
+    ();</script>
+
+
+   
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script>
+      <script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script>
+      <script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script>
+      <meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+      <link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+      <link rel="canonical" href="https://codepen.io/ryanparag/pen/LLrVbo?depth=everything&order=popularity&page=10&q=movie&show_forks=false" />
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'><link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <style>
+        i{
+            vertical-align: middle;
+          position: relative;
+          top: 3px;
+        }
+          
+        .Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+
+.lister-item.mode-detail {
+  background-color: #f6f6f5;
+    margin-bottom: 3px;
+    padding: 10px 10px 20px;
+}
+        #animations{
+          max-width: 60rem!important;
+          max-height: 90rem!important;
+          width: 20%!important;
+          height: 30%!important;
+        }/*<!--changes are needed -->*/
+        #cont{
+          background-color:		#F5F5F5;
+        }
+        input.form-control {  width: 94%!important;
+     
+
+          background-color: transparent !important;}
+        
+u { color: orange; }
+#cat { color: black; }	
+
+      #search {
+        outline: none;
+        border: none !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+      }
+     </style>
+  </head>
+
+  <body class="Site" id="cont" >
+
+  <!-- /navbar -->
+ 
+  <!-- Carousel -->
+
+    <!-- /jumbotron -->
+
+          <div class="row">
+
+
+
+        <div class="col mr-auto" >
+
+
+<!-- Right side -->
+    <div class="bg-white card small">
+ <nav class="navbar navbar-expand-lg  navbar-light bg-transparent">
+      <div class="container-fluid col-lg-10 mx-auto">
+         <a class="navbar-brand" href=#>
+          <img class="d-block mh-10 img-fluid" src="/static/logo.png" width="42rem;" height="42rem;"  alt="Responsive image logo">
+          <!--  -->
+        </a>
+          <ul class="navbar-nav mr-auto">        
+        <a class="navbar-brand  small text-warning 	d-none d-sm-block" href=""><h5>Research Convetry<strong> #</strong></h5></a>
+      </ul>
+</div>
+
+    </nav>
+    </div>
+
+   
+     <!-- end of custom  bar -->
+     <div class="bg-white mt-0 container-fluid">
+     <div class="col-md-9 col-sm-12 mx-auto bg-white">
+     
+      <form class="border-0 form-inline md-form form-sm mt-0  " id="search" method="get" >
+
+
+  <!-- <input class="input-large border-0 form-control form-control-sm ml-auto w-90 " id="search" type="text" placeholder="Search" name="search"
+    aria-label="Search"> -->
+
+   <input class="form-control" dir="auto" id="search" name="search" type="text" tabindex="0" autocorrect="off" autofill="off" autocomplete="off" spellcheck="false" placeholder="Search for papers..." data-role="autocomplete" class="k-input" role="textbox" aria-haspopup="true" aria-disabled="false" aria-readonly="false" aria-owns="search_v4_listbox" aria-autocomplete="list">
+   <button class="btn bg-transparent border-0"type="submit"><i class="fa fa-search mb-2" aria-hidden="true">  </i> </button>
+    </form>
+    </div></div>
+  </div></div>
+    <!-- END NAV modal-->
+    {% if prediction != "" %}
+
+
+    <div class="row d-flex justify-content-center bg-white">
+      <div class="container clear-top  col-sm-12 col-md-9 col-lg-9  p-3 ">
+        <p>{{key}} is predicted to be in {{prediction}} area</p>
+      </div>
+
+    </div>
+    {% endif %}
+
+
+
+
+    <!-- Page Content -->
+
+    <main class="Site-content">
+    <div class="row d-flex justify-content-center p-5 ">
+      {% if my_search %}
+    <div class="container clear-top  col-sm-12 col-md-9 col-lg-9  bg-white">
+    <ul>
+      
+      {% for items in my_search %}
+        {% for item in items %}
+          <article class="card card--publication  px-5 mx-5 pt-4 border-0">
+            <div class="card__media">
+                  <div class="card__body ">
+                <span class="card__label">Publication</span>
+                <h5 class="card__heading">
+                  <a class="card__link" target="_blank" rel="noopener noreferrer" data-bi-name="PECAM: Privacy-Enhanced Video Streaming and Analytics via Securely-Reversible Transformation" data-bi-id="727000" data-bi-type="publication" data-bi-tn="search-result-card" href={{item[4]}}>
+                    <span>{{item[0]}}</span>&nbsp;<span class="c-glyph glyph-chevron-right x-hidden-focus"></span>
+                  </a>
+                </h5>
+                <div class="card__meta x-hidden-focus h6">
+                  <time class="card__date" datetime="2021-10-01">{{item[2]}}</time>
+                  <div class="card__byline">by&nbsp;{{item[1]}}</div>
+                        </div>
+                <div class="card__content">
+                  <p>{{item[3]}}</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      {% endfor %}
+    </ul>       
+<!-- {*
+  
+
+<article class="card">
+       
+                 <div class="card-block">
+
+               {foreach $products as $product}
+                 
+                 <div class="card-block m-2">
+                 <header class="title-header mt-1 mr-5 mx-auto">
+                   <h6>{$product.name} ({$product.year})</h6>
+                 </header>
+                   <div class="img-card">
+     
+                       <img src={$product.image} alt="Movie" width="100rem;" height="150rem;"/>
+                   </div>
+                 </div>
+              
+                 {/foreach}
+                 
+                 
+
+*}                    
+</div>
+              
+               </article> -->
+
+     </div>
+
+     {% endif %}
+</div>
+</main>
+
+    <!-- /.container -->
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+  <!-- container -->
+        <!-- about -->
+
+        <hr class="mx-5">
+        <!-- Footer -->
+        <div class="row py-3 mx-5 ">
+          <div class="col-md-7">
+           <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="https://scholar.google.co.uk/citations?view_op=view_org&hl=en&org=9117984065169182779" target="_blank">Convetry Google Scholar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md text-md-right">
+            <small>&copy; 2021 Information Retrival, Designed by <b>Antonio Franco</b></small>
+          </div>
+        </div><!-- /Footer -->
+
+
+
+
+
+      <!-- /.container -->
+    </footer>
+
+
+   
+
+    <!-- Bootstrap core JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
