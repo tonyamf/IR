@@ -5,3 +5,4 @@ __pycache__/
 # generated / local-only
 modelText
 *.db
+.pytest_cache/
