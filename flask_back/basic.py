@@ -27,11 +27,13 @@ import pickle
 
 # base.User.query.all()
 
-# basedir = os.path.abspath(os.path.dirname(__file__))
+basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
-db_uri = "sqlite:///C:/Users/Antonio franco/Documents/IR/project/paper.db"
+DB_PATH = os.environ.get("IR_DB_PATH", os.path.join(basedir, "paper.db"))
+MODEL_PATH = os.environ.get("IR_MODEL_PATH", os.path.join(basedir, "modelText"))
+db_uri = "sqlite:///" + DB_PATH
 engine = create_engine(db_uri)
-modelText = pickle.load(open('C:/Users/Antonio franco/Documents/IR/project/modelText', 'rb'))
+modelText = pickle.load(open(MODEL_PATH, 'rb'))
 # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///C:/Users/Antonio franco/Documents/IR/project/paper.db"
 # app.config['SQLACHEMY_TRACK_MODIFICATION'] = False
 # db = SQLAlchemy(app)
@@ -101,7 +103,7 @@ def search(s):
                 # results = list(map(int, lts))
                 num = np.array(lts)
                 
-                num = num.astype(np.float)
+                num = num.astype(float)
                 # lt
                 res = [x + y for x, y in zip(res, num)]
                 print(res)

@@ -1,0 +1,16 @@
+# Versions that installed and ran cleanly on Python 3.11 (see README).
+# TextClassification.ipynb
+numpy==1.26.4
+pandas==3.0.6
+scipy==1.17.1
+scikit-learn==1.9.1
+scikit-optimize==0.10.2
+joblib==1.6.0
+nltk==3.10.3
+# running the notebook headlessly
+ipykernel==7.4.0
+nbconvert==7.17.2
+# flask_back/basic.py (uses engine.execute, removed in SQLAlchemy 2)
+Flask==3.1.3
+SQLAlchemy==1.4.54
+Flask-SQLAlchemy==3.0.5
